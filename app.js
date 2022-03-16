@@ -2,6 +2,7 @@ const expres = require('express');
 const app = expres();
 const port = 3300;
 const cors = require('cors');
+const uri = process.env.MONGODB_URI;
 const cookieparse = require('cookie-parser');
 const db = require('./config/mongoose');
 app.use(expres.json());

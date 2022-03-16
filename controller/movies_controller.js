@@ -122,6 +122,7 @@ module.exports.search = async function (req, res) {
   //     Messaging:"Movie List",
   //    Movies:searchMovie
   // });
+  console.log(req.params);
   let searchMovie = await Movies.find({ name: req.params.search });
   return res.status(200).json({
     Messaging: "Movie List",
