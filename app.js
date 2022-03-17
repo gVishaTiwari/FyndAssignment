@@ -14,9 +14,9 @@ app.use(bodyParser.json());
 app.use(cookieparse());
 app.use('/',require('./routes'));
 
-app.listen(port,function(err){
+app.listen(3300,function(err){
     if(err){
         console.log(`Error in running the server:${err}`);
     }
-    console.log(`Server is running on port:${port}`);
-})
+    console.log(`Server is running on port:${3300}`);
+});
